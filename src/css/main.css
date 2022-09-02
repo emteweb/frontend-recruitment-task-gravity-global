@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    background-color: #FFFFFF;
+}
+
+h1{
+    margin: 0;
+}
+
+.flex-container {
+    max-width: 1440px;
+    max-height: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start; /* Always on main axis */
+    align-items: start; /* Always on cross axis */
+}
+
+
+.flex-img{
+    width: 505px;
+    height: 330px;
+    margin: 96px auto 30px;
+    background: url(../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3\,c_fill\,g_auto__c_scale\,w_538.jpg);
+}
+
+.flex-content{
+    max-width: 505px;
+    margin: 0px auto;
+    padding: 0 20px;
+}
+
+button {
+    background-color: #E4C1AE;
+    color: white;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 32px;
+}
+
+
+.flex-item-1{
+    font-size: 14px;
+    align-self: flex-start;
+    
+}
+
+.flex-item-2 {
+    padding: 10px 0;
+    /* border: 1px solid black */
+}
+
+.flex-item-3 {
+    margin-top: 20px;
+    align-self: stretch;
+}
+
+
+
+ @media (min-width: 668px){
+    .flex-container {
+    min-width: 668px;
+    min-height: 960px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start; /* Always on main axis */
+    align-items: start; /* Always on cross axis */
+    }
+
+    .flex-img{
+        min-width: 340px;
+        height: 260px;
+        margin: 96px 0 0 50px; 
+        /* border: 2px solid red; */
+        background: url(../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3\,c_fill\,g_auto__c_scale\,w_538.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 340px;
+        flex-grow: 0;
+    }
+
+    .flex-content {
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+        /* border: 2px solid green; */
+        margin: 136px 30px 0 55px;
+        padding: 0;
+        height: 200px;
+        flex-grow: 2;
+        justify-content: center;
+        
+    }
+
+    .flex-item-1{
+        padding: 10px 0 10px 0;
+        font-size: 12px;
+        /* border: 1px solid green; */
+        align-self: flex-start;   
+    }
+    .flex-item-2 {
+        /* border: 1px solid black; */
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    
+    .flex-item-3 {
+        margin-top: 5px;
+        align-self: stretch;
+    }
+    
+ }
+
+ @media (min-width: 845px){
+    .flex-container {
+        min-width: 845px;
+        min-height: 960px;
+        display: flex;
+        justify-content: start; /* Always on main axis */
+        align-items: start; /* Always on cross axis */
+    }
+    
+    .flex-img{
+        min-width: 430px;
+        height: 300px;
+        margin: 96px 0 0 100px; 
+        /* border: 2px solid red;  */
+        background: url(../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3\,c_fill\,g_auto__c_scale\,w_538.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 300px;
+        flex-grow: 0;
+    }
+    
+    .flex-content {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid yellow; */
+        margin: 136px 30px 0 55px;
+        padding: 0;
+        width: 300px;
+        height: 225px;
+        flex-grow: 1;
+        justify-content: start;
+    }
+
+    .flex-item-1{
+        padding: 10px 0 20px 0;
+        font-size: 12px;
+        /* border: 1px solid green; */
+        align-self: flex-start;    
+    }
+    .flex-item-2 {
+        /* border: 1px solid black; */
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    
+    .flex-item-3 {
+        margin-top: 10px;
+        align-self: stretch;
+    }
+ }
+
+ @media (min-width: 920px){
+    .flex-container {
+        min-width: 845px;
+        min-height: 960px;
+        display: flex;
+        justify-content: start; /* Always on main axis */
+        align-items: start; /* Always on cross axis */
+    }
+    
+    .flex-img{
+        min-width: 450px;
+        height: 300px;
+        margin: 96px 0 0 100px; 
+        /* border: 2px solid red;  */
+        background: url(../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3\,c_fill\,g_auto__c_scale\,w_538.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 300px;
+        flex-grow: 0;
+    }
+    
+    .flex-content {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid yellow; */
+        margin: 136px 30px 0 55px;
+        padding: 0;
+        width: 300px;
+        height: 225px;
+        flex-grow: 1;
+        justify-content: start;
+    }
+
+    .flex-item-1{
+        padding: 10px 0 20px 0;
+        font-size: 12px;
+        /* border: 1px solid green; */
+        align-self: flex-start;    
+    }
+    .flex-item-2 {
+        /* border: 1px solid black; */
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    
+    .flex-item-3 {
+        margin-top: 10px;
+        align-self: stretch;
+    }
+ }
+
+ 
+ @media (min-width: 1440px){
+    .flex-container {
+        min-width: 1440px;
+        min-height: 960px;
+        display: flex;
+        justify-content: start; /* Always on main axis */
+        align-items: start; /* Always on cross axis */
+    }
+    
+    .flex-img{
+        min-width: 300px;
+        height: 330px;
+        margin: 96px 0 0 230px; 
+        /* border: 2px solid red; */
+        background: url(../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3\,c_fill\,g_auto__c_scale\,w_538.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 505px;
+        flex-grow: 0;
+    }
+    
+    .flex-content{
+        max-width: 380px;
+        margin: 136px auto 0 95px;
+        padding: 0 20px;
+    }
+    
+    button {
+        background-color: #E4C1AE;
+        color: white;
+        width: 100px;
+        padding: 10px 20px;
+        border-radius: 32px;
+    }
+    
+    .flex-item-1{
+        padding: 0;
+        /* border: 1px solid yellow; */
+        align-self: flex-start;    
+    }
+    .flex-item-2 {
+        /* border: 1px solid black */
+    }
+    
+    .flex-item-3 {
+        align-self: stretch;
+    }
+ }
