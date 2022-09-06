@@ -10,7 +10,7 @@
     <title>Marcin Trebacz - Recruitment task</title>
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
-  <body>
+  <body onload="getCounter()">
     <div class="flex-container">
       <div class="flex-img">
         <!-- <img
@@ -31,9 +31,22 @@
           </p>
         </div>
         <div class="flex-item-3">
-          <button>Button</button>
+          <button data-modal-target="#modal" class="main-button">Button</button>
+        </div>
+
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <button data-close-button class="close-button">&times;</button>
+            <div class="title">Alert</div>
+          </div>
+          <div id="text" class="modal-body">
+            The button was clicked x times.
+          </div>
+          <button id="resetButton" class="reset">Reset</button>
         </div>
       </div>
+      <div id="overlay"></div>
     </div>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
